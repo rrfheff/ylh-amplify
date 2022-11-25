@@ -1,5 +1,5 @@
 window.TencentGDT = window.TencentGDT || [];
-TencentGDT.push({
+window.TencentGDT.push({
   placement_id: '11**99', // String，广告位id
   appid: 'appid',
   type: 'rewardVideo', // String，广告类型，请根据广告类型填写对应的type值
@@ -7,7 +7,7 @@ TencentGDT.push({
   onComplete: function(res) { // Function，广告位初始化回调方法，已激励视频接入为例
       if(res.code == 0) {
           // 激励视频实例化，注意：插屏广告、模板广告方位为：renderAd
-          var video = new TencentGDT.NATIVE.rewardVideoAd( function(res) {
+          var video = new window.TencentGDT.NATIVE.rewardVideoAd( function(res) {
               // 激励视频回调参数
               console.log(res);
           });
