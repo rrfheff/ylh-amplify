@@ -11,7 +11,7 @@ function App() {
       "comments": [],
       "content": "Lorem ipsum dolor sit amet"
     }));
-    console.debug('done');
+    console.debug('done 2');
   }
   return (
     <div className="App">
